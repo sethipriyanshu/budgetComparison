@@ -7,20 +7,17 @@ import pandas as pd
 from rapidfuzz import fuzz
 
 from src.processing.matcher import MatchRecord
+from src.processing.comparison_builder import _get_item_name
 
 
-def _best_score_and_row(
-    desc: str,
-    other_df: pd.DataFrame,
-    desc_col: str = "description_norm",
-) -> tuple[float, str, int]:
+def _best_score_and_row(desc: str, other_df: pd.DataFrame) -> tuple[float, str, int]:
     best_score = -1.0
     best_desc = ""
     best_idx = -1
     for idx, row in other_df.iterrows():
-        other_desc = row.get(desc_col) or ""
-        if not isinstance(other_desc, str):
-            other_desc = str(other_desc) if other_desc else ""
+        other_desc = _get_item_name(row)
+        if not other_desc:
+            continue
         score = max(
             fuzz.token_sort_ratio(desc, other_desc),
             fuzz.token_set_ratio(desc, other_desc),
@@ -53,20 +50,18 @@ def build_unmatched_diagnostics(
             vendor_side = "A"
             row_idx = m.vendor_a_idx
             r = a_df.loc[m.vendor_a_idx]
-            desc = r.get("description_norm") or r.get("description") or ""
+            desc = _get_item_name(r)
             item_id = r.get("item_id") or r.get("item_id_norm") or ""
             other_df = b_df
         else:
             vendor_side = "B"
             row_idx = m.vendor_b_idx
             r = b_df.loc[m.vendor_b_idx]
-            desc = r.get("description_norm") or r.get("description") or ""
+            desc = _get_item_name(r)
             item_id = r.get("item_id") or r.get("item_id_norm") or ""
             other_df = a_df
 
-        if not isinstance(desc, str):
-            desc = str(desc) if desc else ""
-        best_score, best_desc, best_idx = _best_score_and_row(desc, other_df)
+        best_score, best_desc, best_idx = _best_score_and_row(desc or "", other_df)
 
         rows.append({
             "Vendor": vendor_side,
