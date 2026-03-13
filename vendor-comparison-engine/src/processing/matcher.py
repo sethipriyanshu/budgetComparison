@@ -78,8 +78,20 @@ def match_scope(
                 )
             )
 
-    # Build views for quick lookups
-    a_remaining = vendor_a_df.drop(index=[m.vendor_a_idx for m in matches if m.vendor_a_idx is not None])
+    # Exclude SUBTOTAL rows from matching (they are not line items)
+    def _exclude_subtotal_a(df: pd.DataFrame) -> pd.DataFrame:
+        if "row_type" not in df.columns:
+            return df
+        return df[df["row_type"] != "SUBTOTAL"]
+
+    a_remaining = _exclude_subtotal_a(
+        vendor_a_df.drop(index=[m.vendor_a_idx for m in matches if m.vendor_a_idx is not None])
+    )
+    b_eligible = (
+        vendor_b_df[vendor_b_df["row_type"] != "SUBTOTAL"]
+        if "row_type" in vendor_b_df.columns
+        else vendor_b_df
+    )
 
     # 2. Exact item_id match (use _norm when present so "1.1" and " 1.1 " match)
     a_id_col = "item_id_norm" if "item_id_norm" in vendor_a_df.columns else "item_id"
@@ -92,8 +104,8 @@ def match_scope(
             a_id_val = str(a_id).strip().lower()
             if not a_id_val:
                 continue
-            candidate_b = vendor_b_df.index[
-                (vendor_b_df[b_id_col].fillna("").astype(str).str.strip().str.lower() == a_id_val)
+            candidate_b = b_eligible.index[
+                (b_eligible[b_id_col].fillna("").astype(str).str.strip().str.lower() == a_id_val)
             ]
             for b_idx in candidate_b:
                 if b_idx in used_b_indices:
@@ -113,9 +125,12 @@ def match_scope(
                 used_b_indices.add(int(b_idx))
                 break
 
-        a_remaining = vendor_a_df.drop(
-            index=[m.vendor_a_idx for m in matches if m.method == "ITEM_ID_EXACT"]
+    def _refresh_a_remaining():
+        return _exclude_subtotal_a(
+            vendor_a_df.drop(index=[m.vendor_a_idx for m in matches if m.vendor_a_idx is not None])
         )
+
+    a_remaining = _refresh_a_remaining()
 
     # 3. Exact description match (normalized)
     if "description_norm" in vendor_a_df.columns and "description_norm" in vendor_b_df.columns:
@@ -123,8 +138,8 @@ def match_scope(
             desc = row["description_norm"]
             if not desc:
                 continue
-            candidate_b = vendor_b_df.index[
-                (vendor_b_df["description_norm"] == desc)
+            candidate_b = b_eligible.index[
+                (b_eligible["description_norm"] == desc)
             ]
             for b_idx in candidate_b:
                 if b_idx in used_b_indices:
@@ -144,13 +159,11 @@ def match_scope(
                 used_b_indices.add(int(b_idx))
                 break
 
-        a_remaining = vendor_a_df.drop(
-            index=[m.vendor_a_idx for m in matches if m.method == "DESCRIPTION_EXACT"]
-        )
+        a_remaining = _refresh_a_remaining()
 
     # 4 & 5. Fuzzy description matching
     if "description_norm" in vendor_a_df.columns and "description_norm" in vendor_b_df.columns:
-        b_desc_series = vendor_b_df["description_norm"]
+        b_desc_series = b_eligible["description_norm"]
 
         for idx, row in a_remaining.iterrows():
             a_desc = row["description_norm"]
@@ -184,15 +197,13 @@ def match_scope(
             )
             used_b_indices.add(int(b_idx))
 
-        a_remaining = vendor_a_df.drop(
-            index=[m.vendor_a_idx for m in matches if m.method.startswith("FUZZY")]
-        )
+        a_remaining = _refresh_a_remaining()
 
     # 5b. Optional: position-based fallback (pair 1st remaining A with 1st remaining B, etc.) when similarity >= position_min_score
     if use_position_fallback and "description_norm" in vendor_a_df.columns and "description_norm" in vendor_b_df.columns:
         a_idx_list = sorted(a_remaining.index.tolist())
-        b_remaining_idx = sorted(set(vendor_b_df.index) - used_b_indices)
-        b_desc_series = vendor_b_df["description_norm"]
+        b_remaining_idx = sorted(set(b_eligible.index) - used_b_indices)
+        b_desc_series = b_eligible["description_norm"]
         for k, a_idx in enumerate(a_idx_list):
             if k >= len(b_remaining_idx):
                 break
@@ -221,9 +232,7 @@ def match_scope(
                 )
             )
             used_b_indices.add(int(b_idx))
-        a_remaining = vendor_a_df.drop(
-            index=[m.vendor_a_idx for m in matches if m.method == "POSITION_FALLBACK"]
-        )
+        a_remaining = _refresh_a_remaining()
 
     # 6. Remaining unmatched Vendor A rows
     for idx in a_remaining.index:
@@ -240,8 +249,8 @@ def match_scope(
             )
         )
 
-    # 7. Unmatched Vendor B rows (those whose index not in used_b_indices)
-    for b_idx in vendor_b_df.index:
+    # 7. Unmatched Vendor B rows (only from eligible line items, not SUBTOTAL rows)
+    for b_idx in b_eligible.index:
         if b_idx in used_b_indices:
             continue
         matches.append(

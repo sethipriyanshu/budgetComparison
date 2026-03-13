@@ -1,14 +1,19 @@
 from __future__ import annotations
 
 from pathlib import Path
-from typing import Dict, Optional
+from typing import Dict, List, Optional, Tuple
 
 import pandas as pd
 from openpyxl import Workbook
-from openpyxl.styles import Alignment, Font, PatternFill
+from openpyxl.styles import Font, PatternFill
 from openpyxl.formatting.rule import CellIsRule
 
-from src.processing.comparison_builder import build_comparison_rows_for_scope, _get_item_name
+# Column color coding: A=shared, B=shared, C-E=Vendor A, F-H=Vendor B, I-K=comparison/comments
+FILL_VENDOR_A = PatternFill(start_color="DAE3F3", end_color="DAE3F3", fill_type="solid")  # light blue
+FILL_VENDOR_B = PatternFill(start_color="FCE4D6", end_color="FCE4D6", fill_type="solid")  # light orange
+FILL_NEUTRAL = PatternFill(start_color="F2F2F2", end_color="F2F2F2", fill_type="solid")   # light gray
+
+from src.processing.comparison_builder import build_comparison_rows_for_scope
 
 
 def _auto_fit_columns(ws) -> None:
@@ -24,6 +29,22 @@ def _auto_fit_columns(ws) -> None:
         ws.column_dimensions[column].width = min(max_length + 2, 60)
 
 
+def _apply_comparison_column_colors(ws, max_row: int) -> None:
+    """Apply Vendor A / Vendor B / neutral background to columns for easy differentiation."""
+    # A-B: shared (neutral), C-E: Vendor A, F-H: Vendor B, I-K: comparison/comments (neutral)
+    for row in range(1, max_row + 1):
+        for col in range(1, 12):  # columns 1-11 (A-K)
+            cell = ws.cell(row=row, column=col)
+            if col <= 2:
+                cell.fill = FILL_NEUTRAL
+            elif col <= 5:
+                cell.fill = FILL_VENDOR_A
+            elif col <= 8:
+                cell.fill = FILL_VENDOR_B
+            else:
+                cell.fill = FILL_NEUTRAL
+
+
 def write_excel_workbook(
     output_path: Path,
     matches_with_deltas: pd.DataFrame,
@@ -33,6 +54,7 @@ def write_excel_workbook(
     vendor_b_sheets: Dict[str, pd.DataFrame],
     validation_ok: bool,
     unmatched_diagnostics: Optional[pd.DataFrame] = None,
+    sheet_pairs: Optional[List[Tuple[str, str, str]]] = None,
 ) -> None:
     wb = Workbook()
 
@@ -74,8 +96,7 @@ def write_excel_workbook(
     summary["A11"] = "Note: Totals can differ — not all vendors quote every item. Use this file for line-by-line comparison."
     summary["A11"].font = Font(italic=True)
 
-    # By-section comparison (same sheet)
-    scopes_for_summary = sorted(set(list(vendor_a_sheets.keys()) + list(vendor_b_sheets.keys())))
+    # By-section comparison: use sheet_pairs so "Mechanics" and "ATS Mechanics v2" show as one section
     summary["A13"] = "By section"
     summary["A13"].font = Font(bold=True)
     summary["A14"] = "Section"
@@ -87,16 +108,29 @@ def write_excel_workbook(
     summary["C14"].font = Font(bold=True)
     summary["D14"].font = Font(bold=True)
     row = 15
-    for scope in scopes_for_summary:
-        a_df = vendor_a_sheets.get(scope)
-        b_df = vendor_b_sheets.get(scope)
-        sa = round(a_df["total_price"].fillna(0).sum(), 2) if a_df is not None and "total_price" in a_df.columns else 0.0
-        sb = round(b_df["total_price"].fillna(0).sum(), 2) if b_df is not None and "total_price" in b_df.columns else 0.0
-        summary.cell(row=row, column=1, value=scope)
-        summary.cell(row=row, column=2, value=sa)
-        summary.cell(row=row, column=3, value=sb)
-        summary.cell(row=row, column=4, value=round(sb - sa, 2))
-        row += 1
+    if sheet_pairs:
+        for scope, a_sheet, b_sheet in sheet_pairs:
+            a_df = vendor_a_sheets.get(a_sheet)
+            b_df = vendor_b_sheets.get(b_sheet)
+            sa = round(a_df["total_price"].fillna(0).sum(), 2) if a_df is not None and "total_price" in a_df.columns else 0.0
+            sb = round(b_df["total_price"].fillna(0).sum(), 2) if b_df is not None and "total_price" in b_df.columns else 0.0
+            summary.cell(row=row, column=1, value=scope)
+            summary.cell(row=row, column=2, value=sa)
+            summary.cell(row=row, column=3, value=sb)
+            summary.cell(row=row, column=4, value=round(sb - sa, 2))
+            row += 1
+    else:
+        scopes_for_summary = sorted(set(list(vendor_a_sheets.keys()) + list(vendor_b_sheets.keys())))
+        for scope in scopes_for_summary:
+            a_df = vendor_a_sheets.get(scope)
+            b_df = vendor_b_sheets.get(scope)
+            sa = round(a_df["total_price"].fillna(0).sum(), 2) if a_df is not None and "total_price" in a_df.columns else 0.0
+            sb = round(b_df["total_price"].fillna(0).sum(), 2) if b_df is not None and "total_price" in b_df.columns else 0.0
+            summary.cell(row=row, column=1, value=scope)
+            summary.cell(row=row, column=2, value=sa)
+            summary.cell(row=row, column=3, value=sb)
+            summary.cell(row=row, column=4, value=round(sb - sa, 2))
+            row += 1
 
     # Per-scope comparison sheets
     scopes = sorted(set(matches_with_deltas["scope_category"].dropna().tolist()))
@@ -116,6 +150,7 @@ def write_excel_workbook(
             "Total (B)",
             "Price difference ($)",
             "Price difference (%)",
+            "Comments",
         ]
         ws.append(headers)
 
@@ -128,8 +163,10 @@ def write_excel_workbook(
         for row in rows:
             ws.append(row)
 
-        # Simple conditional formatting on Price Delta (%) column (J)
         max_row = ws.max_row
+        _apply_comparison_column_colors(ws, max_row)
+
+        # Simple conditional formatting on Price Delta (%) column (J)
         pct_col = "J"
         if max_row >= 2:
             cell_range = f"{pct_col}2:{pct_col}{max_row}"
@@ -165,62 +202,6 @@ def write_excel_workbook(
             )
 
         _auto_fit_columns(ws)
-
-    # Items not matched (only one vendor quoted — useful for decision-making)
-    unmatched_ws = wb.create_sheet("Items not matched")
-    unmatched_ws.append(["Section", "Vendor", "Item ref", "Item name", "Quoted total"])
-    for _, row in unmatched.iterrows():
-        scope = row.get("scope_category")
-        a_sheet = row.get("vendor_a_sheet")
-        b_sheet = row.get("vendor_b_sheet")
-        a_idx = row.get("vendor_a_idx")
-        b_idx = row.get("vendor_b_idx")
-        if pd.notna(a_idx) and a_sheet and a_sheet in vendor_a_sheets:
-            r = vendor_a_sheets[a_sheet].loc[int(a_idx)]
-            item_ref = r.get("item_id") or ""
-            item_name = _get_item_name(r)
-            total = r.get("total_price")
-            unmatched_ws.append([scope, "A", item_ref, item_name, total])
-        elif pd.notna(b_idx) and b_sheet and b_sheet in vendor_b_sheets:
-            r = vendor_b_sheets[b_sheet].loc[int(b_idx)]
-            item_ref = r.get("item_id") or ""
-            item_name = _get_item_name(r)
-            total = r.get("total_price")
-            unmatched_ws.append([scope, "B", item_ref, item_name, total])
-    _auto_fit_columns(unmatched_ws)
-
-    # Optional: why unmatched (closest match from other vendor — for tuning)
-    if unmatched_diagnostics is not None and not unmatched_diagnostics.empty:
-        diag_ws = wb.create_sheet("Why not matched")
-        diag_ws.append(["Vendor", "Section", "Item name", "Quoted total", "Closest match (other vendor)", "Similarity %"])
-        for r in unmatched_diagnostics.itertuples(index=False):
-            diag_ws.append([
-                getattr(r, "Vendor", ""),
-                getattr(r, "Scope", ""),
-                getattr(r, "Description", ""),
-                "",  # total not in diagnostics; could add
-                getattr(r, "Best_Match_Description", ""),
-                getattr(r, "Best_Match_Score", ""),
-            ])
-        _auto_fit_columns(diag_ws)
-
-    # Optional items (options / alternatives — excluded from main totals)
-    options_ws = wb.create_sheet("Options")
-    options_ws.append(["Section", "Vendor", "Item name", "Total"])
-    for vendor_label, sheets in (("A", vendor_a_sheets), ("B", vendor_b_sheets)):
-        for scope, df in sheets.items():
-            if "row_type" not in df.columns:
-                continue
-            is_option = df["row_type"] == "OPTION"
-            for idx in df[is_option].index:
-                row = df.loc[idx]
-                options_ws.append([
-                    scope,
-                    vendor_label,
-                    _get_item_name(row),
-                    row.get("total_price"),
-                ])
-    _auto_fit_columns(options_ws)
 
     wb.save(output_path)
 

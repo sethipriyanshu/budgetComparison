@@ -17,7 +17,6 @@ from src.processing.delta_calculator import calculate_deltas
 from src.processing.validator import validate_totals
 from src.output.audit_logger import build_audit_trail
 from src.output.excel_writer import write_excel_workbook
-from src.output.unmatched_diagnostics import build_unmatched_diagnostics
 
 
 def _normalize_vendor(
@@ -202,9 +201,6 @@ def main() -> None:
 
     if args.output:
         output_path = Path(args.output)
-        unmatched_diag = build_unmatched_diagnostics(
-            all_matches, vendor_a_sheets, vendor_b_sheets
-        )
         write_excel_workbook(
             output_path=output_path,
             matches_with_deltas=deltas.matches_with_deltas,
@@ -213,7 +209,7 @@ def main() -> None:
             vendor_a_sheets=vendor_a_sheets,
             vendor_b_sheets=vendor_b_sheets,
             validation_ok=validation_result.ok,
-            unmatched_diagnostics=unmatched_diag,
+            sheet_pairs=sheet_pairs,
         )
         print(f"\nExcel comparison workbook written to: {output_path}")
 

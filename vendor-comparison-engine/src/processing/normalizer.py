@@ -81,7 +81,7 @@ def normalize_sheet(
     df_norm["scope_category"] = scope_category
     df_norm["vendor_id"] = vendor_id
 
-    # Basic row_type tagging for options (can be refined later).
+    # Row type: OPTION (alternatives), SUBTOTAL (total price / sum rows — not line items), NORMAL
     desc_norm_col = "description_norm"
     if desc_norm_col in df_norm.columns:
         def classify_row(desc: str) -> str:
@@ -91,6 +91,9 @@ def normalize_sheet(
             option_keywords = ["option", "alternative", "alt", "instead of", "optional"]
             if any(k in text for k in option_keywords):
                 return "OPTION"
+            total_keywords = ["total price", "subtotal", "sum ", " total", "section total"]
+            if any(k in text for k in total_keywords):
+                return "SUBTOTAL"
             return "NORMAL"
 
         df_norm["row_type"] = df_norm[desc_norm_col].map(classify_row)

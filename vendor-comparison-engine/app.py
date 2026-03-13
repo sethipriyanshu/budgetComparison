@@ -18,7 +18,6 @@ from src.processing.delta_calculator import calculate_deltas
 from src.processing.validator import validate_totals
 from src.output.audit_logger import build_audit_trail
 from src.output.excel_writer import write_excel_workbook
-from src.output.unmatched_diagnostics import build_unmatched_diagnostics
 from rapidfuzz import fuzz
 
 
@@ -144,9 +143,6 @@ def run_comparison(
 
     deltas = calculate_deltas(all_matches, vendor_a_sheets, vendor_b_sheets)
     audit_df = build_audit_trail(all_matches)
-    unmatched_diag = build_unmatched_diagnostics(
-        all_matches, vendor_a_sheets, vendor_b_sheets
-    )
 
     # Build Excel workbook in a temporary file and return bytes
     with tempfile.TemporaryDirectory() as tmpdir:
@@ -159,7 +155,7 @@ def run_comparison(
             vendor_a_sheets=vendor_a_sheets,
             vendor_b_sheets=vendor_b_sheets,
             validation_ok=validation_result.ok,
-            unmatched_diagnostics=unmatched_diag,
+            sheet_pairs=sheet_pairs,
         )
         data = tmp_path.read_bytes()
 

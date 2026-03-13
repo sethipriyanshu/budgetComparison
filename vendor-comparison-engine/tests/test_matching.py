@@ -4,6 +4,7 @@ from src.processing.matcher import match_scope
 
 
 def test_match_scope_exact_item_id():
+    # Use descriptions that don't fuzzy-match so we get one exact match + two unmatched
     a_df = pd.DataFrame(
         {
             "item_id": ["1", "2"],
@@ -14,8 +15,8 @@ def test_match_scope_exact_item_id():
     b_df = pd.DataFrame(
         {
             "item_id": ["1", "3"],
-            "description": ["Item A", "Item C"],
-            "description_norm": ["item a", "item c"],
+            "description": ["Item A", "Zebra wiring assembly"],
+            "description_norm": ["item a", "zebra wiring assembly"],
         }
     )
 
