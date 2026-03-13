@@ -1,0 +1,13 @@
+# Manual match overrides for tricky or recurring item descriptions.
+#
+# Each entry forces a specific Vendor A description to match a Vendor B
+# description (or pattern) and will be labelled as MANUAL in the audit log.
+#
+# Example structure:
+#
+# - vendor_a_description: "Roller bed conveyor 1 drive 6-7 support rollers"
+#   vendor_b_description: "Conveyor unit type RC-6 with drive module"
+#   force_match: true
+
+[]
+

@@ -1,0 +1,125 @@
+item_id,Scope - Overall,unit_price_hardware,Opt.,qty,unit,total_price,comments,E,K,O,item_id_norm,Scope - Overall_norm,Opt._norm,unit_norm,comments_norm,E_norm,K_norm,O_norm,scope_category,vendor_id
+,,,,,,,,,,,,,,,,,,,Overall,A
+1.,,,,,,,,,,,1.,,,,,,,,Overall,A
+1.1,Project management,18884.0,,1.0,pcs.,18884.0,,,,,1.1,project management,,pcs.,,,,,Overall,A
+1.2,Design Mechanical,28351.0,,1.0,pcs.,28351.0,,,,,1.2,design mechanical,,pcs.,,,,,Overall,A
+1.3,Design Electrical,0.0,,1.0,pcs.,0.0,,,,,1.3,design electrical,,pcs.,,,,,Overall,A
+1.4,Software Engineering ,0.0,,1.0,pcs.,0.0,,,,,1.4,software engineering,,pcs.,,,,,Overall,A
+1.5,Documentation,9850.0,,1.0,pcs.,9850.0,,,,,1.5,documentation,,pcs.,,,,,Overall,A
+1.6,Static calculation ,0.0,,1.0,pcs.,0.0,,,,,1.6,static calculation,,pcs.,,,,,Overall,A
+1.7,Training per hour,0.0,,120.0,h,0.0,Within 3 shifts,,,,1.7,training per hour,,h,within 3 shifts,,,,Overall,A
+1.8,Training / Instruction Production (3 Shifts each 2 Days),0.0,,0.0,d,0.0,,,,,1.8,training / instruction production (3 shifts each 2 days),,d,,,,,Overall,A
+1.9,Mechanic hourly rate,0.0,,1.0,h,0.0,,,,,1.9,mechanic hourly rate,,h,,,,,Overall,A
+1.10,Electric hourly rate,0.0,,1.0,h,0.0,,,,,1.10,electric hourly rate,,h,,,,,Overall,A
+1.11,Software hourly rate,0.0,,1.0,h,0.0,,,,,1.11,software hourly rate,,h,,,,,Overall,A
+1.12,Start up monitoring after Technical Acceptance (2 week á 3 shifts),0.0,,2.0,pcs.,0.0,,,,,1.12,start up monitoring after technical acceptance (2 week á 3 shifts),,pcs.,,,,,Overall,A
+1.13,Virtual comissioning,0.0,,1.0,pcs.,0.0,,,,,1.13,virtual comissioning,,pcs.,,,,,Overall,A
+1.,Total Price:,,,,,57085.0,,,,,1.,total price:,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+1.,0,,,,,57085.0,,,,,1.,0,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,Final Price,,,,,57085.0,,,,,,final price,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A
+,,,,,,,,,,,,,,,,,,,Overall,A

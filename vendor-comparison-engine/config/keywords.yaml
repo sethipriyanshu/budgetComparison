@@ -1,0 +1,56 @@
+item_id:
+  - "pos"
+  - "position"
+  - "item #"
+  - "no."
+  - "ref"
+  - "#"
+
+description:
+  - "description"
+  - "item"
+  - "scope"
+  - "service"
+  - "work package"
+
+qty:
+  - "qty"
+  - "quantity"
+  - "amount"
+  - "no. of units"
+
+unit:
+  - "unit"
+  - "uom"
+  - "measure"
+  - "each"
+
+unit_price_hardware:
+  - "unit price hardware"
+  - "hw price"
+  - "hardware rate"
+
+unit_price_service:
+  - "unit price service"
+  - "sw price"
+  - "service rate"
+  - "labour"
+
+unit_price_sum:
+  - "unit price sum"
+  - "unit total"
+  - "rate"
+
+total_price:
+  - "total price"
+  - "line total"
+  - "amount"
+  - "extended price"
+
+comments:
+  - "comments"
+  - "notes"
+  - "remarks"
+  - "scope notes"
+  - "description (long)"
+

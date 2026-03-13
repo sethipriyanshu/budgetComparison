@@ -1,0 +1,14 @@
+fuzzy:
+  auto: 92
+  review: 65
+  # When true, after ID/description/fuzzy, try matching remaining rows by position (row 5 A with row 5 B) if similarity >= position_min_score
+  use_position_fallback: true
+  position_min_score: 50
+
+validation:
+  total_tolerance: 0.01
+  # When true, total mismatch does not block report generation (you still get the workbook)
+  total_mismatch_warn_only: true
+
+sheet_name_threshold: 80
+

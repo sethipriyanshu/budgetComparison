@@ -1,0 +1,482 @@
+item_id,Scope - Mechanics,unit_price_hardware,unit_price_service,unit_price_sum,Opt.,qty,unit,total_price,comments,E,K,O,item_id_norm,Scope - Mechanics_norm,Opt._norm,unit_norm,comments_norm,E_norm,K_norm,O_norm,scope_category,vendor_id
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+1.,Paint Transfer,,,,,,,,,,,,1.,paint transfer,,,,,,,Mechanics,A
+1.1,"Roller bed conveyor for Belt lifter  (1 engine, 6 support rollers)",6410.0,0.0,6410.0,,2.0,pcs.,12820.0,For Belt Lifter '6000mm',,,,1.1,"roller bed conveyor for belt lifter  (1 engine, 6 support rollers)",,pcs.,for belt lifter '6000mm',,,,Mechanics,A
+1.2,"Drive unit belt lifter( engine, transmission, FU( Motec, Protec), brake resistor, Inni's, engine cable)",13218.8838004571,0.0,13218.8838004571,,2.0,pcs.,26437.7676009142,Update Belt Lifter,,,,1.2,"drive unit belt lifter( engine, transmission, fu( motec, protec), brake resistor, inni's, engine cable)",,pcs.,update belt lifter,,,,Mechanics,A
+1.3,Pulling equipment belt lifter,1299.4649528293783,0.0,1299.4649528293783,,2.0,pcs.,2598.9299056587565,Update Belt Lifter,,,,1.3,pulling equipment belt lifter,,pcs.,update belt lifter,,,,Mechanics,A
+1.4,Lifting carriage belt lifter,6016.041448284158,0.0,6016.041448284158,,2.0,pcs.,12032.082896568316,Update Belt Lifter,,,,1.4,lifting carriage belt lifter,,pcs.,update belt lifter,,,,Mechanics,A
+1.5,Drop protection belt lifter,1968.8862921657244,0.0,1968.8862921657244,,2.0,pcs.,3937.772584331449,Update Belt Lifter,,,,1.5,drop protection belt lifter,,pcs.,update belt lifter,,,,Mechanics,A
+1.6,Counterweight belt lifter,7219.24973794099,0.0,7219.24973794099,,2.0,pcs.,14438.49947588198,Update Belt Lifter,,,,1.6,counterweight belt lifter,,pcs.,update belt lifter,,,,Mechanics,A
+1.7,Detachable parts belt lifter,,0.0,0.0,,2.0,pcs.,0.0,Update Belt Lifter,,,,1.7,detachable parts belt lifter,,pcs.,update belt lifter,,,,Mechanics,A
+1.8,Swivel lock belt lifter,8859.98831474576,0.0,8859.98831474576,,2.0,pcs.,17719.97662949152,Update Belt Lifter,,,,1.8,swivel lock belt lifter,,pcs.,update belt lifter,,,,Mechanics,A
+1.9,Other belt lifter,30733.221194989077,0.0,30733.221194989077,,2.0,pcs.,61466.442389978154,Update Belt Lifter,,,,1.9,other belt lifter,,pcs.,update belt lifter,,,,Mechanics,A
+1.10,"Roller bed conveyor, 1 drive, 6-7 support rollers",7329.0,0.0,7329.0,,4.0,pcs.,29316.0,Roller Beds before and after the Belt Lifter,,,,1.10,"roller bed conveyor, 1 drive, 6-7 support rollers",,pcs.,roller beds before and after the belt lifter,,,,Mechanics,A
+1.11,Scissor lift with roller bed conveyor,47177.0,0.0,47177.0,,1.0,pcs.,47177.0,Hand Over Paint Skid to EMS,,,,1.11,scissor lift with roller bed conveyor,,pcs.,hand over paint skid to ems,,,,Mechanics,A
+,reduction if eccentric lift instead of scissor lift for item 1.11  OPTION,-20815.0,0.0,-20815.0,,0.0,pcs.,0.0,"klick 1 in amount to see the result,  min. 600 mm conveying height or pit is needed !",,,,,reduction if eccentric lift instead of scissor lift for item 1.11  option,,pcs.,"klick 1 in amount to see the result,  min. 600 mm conveying height or pit is needed !",,,,Mechanics,A
+1.12,"Docking link at the roller conveyor with interlock during the transfer, inquiry with the aid of sensor systems",4321.0,0.0,4321.0,,1.0,pcs.,4321.0,"Hand Over Paint Skid to EMS, Locking Skids",,,,1.12,"docking link at the roller conveyor with interlock during the transfer, inquiry with the aid of sensor systems",,pcs.,"hand over paint skid to ems, locking skids",,,,Mechanics,A
+1.13,Mechanical installation on-site total RfQ,0.0,0.0,0.0,,1.0,pcs.,0.0,Dismanteling Belt Lifter / Hand Over Staion,,,,1.13,mechanical installation on-site total rfq,,pcs.,dismanteling belt lifter / hand over staion,,,,Mechanics,A
+1.14,"Corner transfer, lift table with roller conveyor for longitudinal and cross transport, frequency controlled, powered",24665.0,0.0,24665.0,,2.0,pcs.,49330.0,,,,,1.14,"corner transfer, lift table with roller conveyor for longitudinal and cross transport, frequency controlled, powered",,pcs.,,,,,Mechanics,A
+1.15,Portal with red curtains adapted to conveyed material,0.0,0.0,0.0,,4.0,pcs.,0.0,,,,,1.15,portal with red curtains adapted to conveyed material,,pcs.,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+1.,Total Price:,,,,,,,281595.47148282436,,,,,1.,total price:,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+2.,,,,,,,,,,X,X,X,2.,,,,,x,x,x,Mechanics,A
+2.1,,,,0.0,,,,0.0,,,,,2.1,,,,,,,,Mechanics,A
+2.2,,,,0.0,,,,0.0,,,,,2.2,,,,,,,,Mechanics,A
+2.3,,,,0.0,,,,0.0,,,,,2.3,,,,,,,,Mechanics,A
+2.4,,,,0.0,,,,0.0,,,,,2.4,,,,,,,,Mechanics,A
+2.5,,,,0.0,,,,0.0,,,,,2.5,,,,,,,,Mechanics,A
+2.6,,,,0.0,,,,0.0,,,,,2.6,,,,,,,,Mechanics,A
+2.7,,,,0.0,,,,0.0,,,,,2.7,,,,,,,,Mechanics,A
+2.8,,,,0.0,,,,0.0,,,,,2.8,,,,,,,,Mechanics,A
+2.9,,,,0.0,,,,0.0,,,,,2.9,,,,,,,,Mechanics,A
+2.10,,,,0.0,,,,0.0,,,,,2.10,,,,,,,,Mechanics,A
+2.11,,,,0.0,,,,0.0,,,,,2.11,,,,,,,,Mechanics,A
+2.12,,,,0.0,,,,0.0,,,,,2.12,,,,,,,,Mechanics,A
+2.13,,,,0.0,,,,0.0,,,,,2.13,,,,,,,,Mechanics,A
+2.14,,,,0.0,,,,0.0,,,,,2.14,,,,,,,,Mechanics,A
+2.15,,,,0.0,,,,0.0,,,,,2.15,,,,,,,,Mechanics,A
+2.16,,,,0.0,,,,0.0,,,,,2.16,,,,,,,,Mechanics,A
+2.17,,,,0.0,,,,0.0,,,,,2.17,,,,,,,,Mechanics,A
+2.18,,,,0.0,,,,0.0,,,,,2.18,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+2.,"Total Price: 
+",,,,,,,0.0,,,,,2.,total price:,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+3.,,,,,,,,,,,,,3.,,,,,,,,Mechanics,A
+3.1,,,,0.0,,,,0.0,,,,,3.1,,,,,,,,Mechanics,A
+3.2,,,,0.0,,,,0.0,,,,,3.2,,,,,,,,Mechanics,A
+3.3,,,,0.0,,,,0.0,,,,,3.3,,,,,,,,Mechanics,A
+3.4,,,,0.0,,,,0.0,,,,,3.4,,,,,,,,Mechanics,A
+3.5,,,,0.0,,,,0.0,,,,,3.5,,,,,,,,Mechanics,A
+3.6,,,,0.0,,,,0.0,,,,,3.6,,,,,,,,Mechanics,A
+3.7,,,,0.0,,,,0.0,,,,,3.7,,,,,,,,Mechanics,A
+3.8,,,,0.0,,,,0.0,,,,,3.8,,,,,,,,Mechanics,A
+3.9,,,,0.0,,,,0.0,,,,,3.9,,,,,,,,Mechanics,A
+3.10,,,,0.0,,,,0.0,,,,,3.10,,,,,,,,Mechanics,A
+3.11,,,,0.0,,,,0.0,,,,,3.11,,,,,,,,Mechanics,A
+3.12,,,,0.0,,,,0.0,,,,,3.12,,,,,,,,Mechanics,A
+3.13,,,,0.0,,,,0.0,,,,,3.13,,,,,,,,Mechanics,A
+3.14,,,,0.0,,,,0.0,,,,,3.14,,,,,,,,Mechanics,A
+3.15,,,,0.0,,,,0.0,,,,,3.15,,,,,,,,Mechanics,A
+3.16,,,,0.0,,,,0.0,,,,,3.16,,,,,,,,Mechanics,A
+3.17,,,,0.0,,,,0.0,,,,,3.17,,,,,,,,Mechanics,A
+3.18,,,,0.0,,,,0.0,,,,,3.18,,,,,,,,Mechanics,A
+3.19,,,,0.0,,,,0.0,,,,,3.19,,,,,,,,Mechanics,A
+3.20,,,,0.0,,,,0.0,,,,,3.20,,,,,,,,Mechanics,A
+3.21,,,,0.0,,,,0.0,,,,,3.21,,,,,,,,Mechanics,A
+3.22,,,,0.0,,,,0.0,,,,,3.22,,,,,,,,Mechanics,A
+3.23,,,,0.0,,,,0.0,,,,,3.23,,,,,,,,Mechanics,A
+3.24,,,,0.0,,,,0.0,,,,,3.24,,,,,,,,Mechanics,A
+3.25,,,,0.0,,,,0.0,,,,,3.25,,,,,,,,Mechanics,A
+3.24,,,,0.0,,,,0.0,,,,,3.24,,,,,,,,Mechanics,A
+3.25,,,,0.0,,,,0.0,,,,,3.25,,,,,,,,Mechanics,A
+3.26,,,,0.0,,,,0.0,,,,,3.26,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+3.,"Total Price: 
+",,,,,,,0.0,,,,,3.,total price:,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+4.,,,,,,,,,,,,,4.,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+4.,"Total Price: 
+",,,,,,,0.0,,,,,4.,total price:,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+5.,,,,,,,,,,,,,5.,,,,,,,,Mechanics,A
+5.1,,,,0.0,,,,0.0,,,,,5.1,,,,,,,,Mechanics,A
+5.2,,,,0.0,,,,0.0,,,,,5.2,,,,,,,,Mechanics,A
+5.3,,,,0.0,,,,0.0,,,,,5.3,,,,,,,,Mechanics,A
+5.4,,,,0.0,,,,0.0,,,,,5.4,,,,,,,,Mechanics,A
+5.5,,,,0.0,,,,0.0,,,,,5.5,,,,,,,,Mechanics,A
+5.6,,,,0.0,,,,0.0,,,,,5.6,,,,,,,,Mechanics,A
+5.7,,,,0.0,,,,0.0,,,,,5.7,,,,,,,,Mechanics,A
+5.8,,,,0.0,,,,0.0,,,,,5.8,,,,,,,,Mechanics,A
+5.9,,,,0.0,,,,0.0,,,,,5.9,,,,,,,,Mechanics,A
+5.10,,,,0.0,,,,0.0,,,,,5.10,,,,,,,,Mechanics,A
+5.11,,,,0.0,,,,0.0,,,,,5.11,,,,,,,,Mechanics,A
+5.12,,,,0.0,,,,0.0,,,,,5.12,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+5.,"Total Price: 
+",,,,,,,0.0,,,,,5.,total price:,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+6.,,,,,,,,,,,,,6.,,,,,,,,Mechanics,A
+6.1,,,,0.0,,,,0.0,,,,,6.1,,,,,,,,Mechanics,A
+6.2,,,,0.0,,,,0.0,,,,,6.2,,,,,,,,Mechanics,A
+6.3,,,,0.0,,,,0.0,,,,,6.3,,,,,,,,Mechanics,A
+6.4,,,,0.0,,,,0.0,,,,,6.4,,,,,,,,Mechanics,A
+6.5,,,,0.0,,,,0.0,,,,,6.5,,,,,,,,Mechanics,A
+6.6,,,,0.0,,,,0.0,,,,,6.6,,,,,,,,Mechanics,A
+6.7,,,,0.0,,,,0.0,,,,,6.7,,,,,,,,Mechanics,A
+6.8,,,,0.0,,,,0.0,,,,,6.8,,,,,,,,Mechanics,A
+6.9,,,,0.0,,,,0.0,,,,,6.9,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+6.,"Total Price: 
+",,,,,,,0.0,,,,,6.,total price:,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+7.,,,,,,,,,,,,,7.,,,,,,,,Mechanics,A
+7.1,,,,0.0,,,,0.0,,,,,7.1,,,,,,,,Mechanics,A
+7.2,,,,0.0,,,,0.0,,,,,7.2,,,,,,,,Mechanics,A
+7.3,,,,0.0,,,,0.0,,,,,7.3,,,,,,,,Mechanics,A
+7.4,,,,0.0,,,,0.0,,,,,7.4,,,,,,,,Mechanics,A
+7.12,,,,0.0,,,,0.0,,,,,7.12,,,,,,,,Mechanics,A
+7.13,,,,0.0,,,,0.0,,,,,7.13,,,,,,,,Mechanics,A
+7.14,,,,0.0,,,,0.0,,,,,7.14,,,,,,,,Mechanics,A
+7.16,,,,0.0,,,,0.0,,,,,7.16,,,,,,,,Mechanics,A
+7.17,,,,0.0,,,,0.0,,,,,7.17,,,,,,,,Mechanics,A
+7.18,,,,0.0,,,,0.0,,,,,7.18,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+7.,"Total Price: 
+",,,,,,,0.0,,,,,7.,total price:,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+8.,,,,,,,,,,,,,8.,,,,,,,,Mechanics,A
+8.1,,,,0.0,,,,0.0,,,,,8.1,,,,,,,,Mechanics,A
+8.2,,,,0.0,,,,0.0,,,,,8.2,,,,,,,,Mechanics,A
+8.3,,,,0.0,,,,0.0,,,,,8.3,,,,,,,,Mechanics,A
+8.4,,,,0.0,,,,0.0,,,,,8.4,,,,,,,,Mechanics,A
+8.5,,,,0.0,,,,0.0,,,,,8.5,,,,,,,,Mechanics,A
+8.6,,,,0.0,,,,0.0,,,,,8.6,,,,,,,,Mechanics,A
+8.7,,,,0.0,,,,0.0,,,,,8.7,,,,,,,,Mechanics,A
+8.8,,,,0.0,,,,0.0,,,,,8.8,,,,,,,,Mechanics,A
+8.9,,,,0.0,,,,0.0,,,,,8.9,,,,,,,,Mechanics,A
+8.10,,,,0.0,,,,0.0,,,,,8.10,,,,,,,,Mechanics,A
+8.11,,,,0.0,,,,0.0,,,,,8.11,,,,,,,,Mechanics,A
+8.12,,,,0.0,,,,0.0,,,,,8.12,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+8.,"Total Price: 
+",,,,,,,0.0,,,,,8.,total price:,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+9.,,,,,,,,,,,,,9.,,,,,,,,Mechanics,A
+9.1,,,,0.0,,,,0.0,,,,,9.1,,,,,,,,Mechanics,A
+9.2,,,,0.0,,,,0.0,,,,,9.2,,,,,,,,Mechanics,A
+9.3,,,,0.0,,,,0.0,,,,,9.3,,,,,,,,Mechanics,A
+9.4,,,,0.0,,,,0.0,,,,,9.4,,,,,,,,Mechanics,A
+9.5,,,,0.0,,,,0.0,,,,,9.5,,,,,,,,Mechanics,A
+9.6,,,,0.0,,,,0.0,,,,,9.6,,,,,,,,Mechanics,A
+9.7,,,,0.0,,,,0.0,,,,,9.7,,,,,,,,Mechanics,A
+9.8,,,,0.0,,,,0.0,,,,,9.8,,,,,,,,Mechanics,A
+9.9,,,,0.0,,,,0.0,,,,,9.9,,,,,,,,Mechanics,A
+9.10,,,,0.0,,,,0.0,,,,,9.10,,,,,,,,Mechanics,A
+9.11,,,,0.0,,,,0.0,,,,,9.11,,,,,,,,Mechanics,A
+9.12,,,,0.0,,,,0.0,,,,,9.12,,,,,,,,Mechanics,A
+9.13,,,,0.0,,,,0.0,,,,,9.13,,,,,,,,Mechanics,A
+9.14,,,,0.0,,,,0.0,,,,,9.14,,,,,,,,Mechanics,A
+9.15,,,,0.0,,,,0.0,,,,,9.15,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+9.,"Total Price: 
+",,,,,,,0.0,,,,,9.,total price:,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+10.,,,,,,,,,,,,,10.,,,,,,,,Mechanics,A
+10.1,,,,0.0,,,,0.0,,,,,10.1,,,,,,,,Mechanics,A
+10.2,,,,0.0,,,,0.0,,,,,10.2,,,,,,,,Mechanics,A
+10.3,,,,0.0,,,,0.0,,,,,10.3,,,,,,,,Mechanics,A
+10.4,,,,0.0,,,,0.0,,,,,10.4,,,,,,,,Mechanics,A
+10.5,,,,0.0,,,,0.0,,,,,10.5,,,,,,,,Mechanics,A
+10.6,,,,0.0,,,,0.0,,,,,10.6,,,,,,,,Mechanics,A
+10.7,,,,0.0,,,,0.0,,,,,10.7,,,,,,,,Mechanics,A
+10.8,,,,0.0,,,,0.0,,,,,10.8,,,,,,,,Mechanics,A
+10.9,,,,0.0,,,,0.0,,,,,10.9,,,,,,,,Mechanics,A
+10.10,,,,0.0,,,,0.0,,,,,10.10,,,,,,,,Mechanics,A
+10.11,,,,0.0,,,,0.0,,,,,10.11,,,,,,,,Mechanics,A
+10.12,,,,0.0,,,,0.0,,,,,10.12,,,,,,,,Mechanics,A
+10.13,,,,0.0,,,,0.0,,,,,10.13,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+10.,"Total Price: 
+",,,,,,,0.0,,,,,10.,total price:,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+11.,,,,,,,,,,,,,11.,,,,,,,,Mechanics,A
+11.1,,,,0.0,,,,0.0,,,,,11.1,,,,,,,,Mechanics,A
+11.2,,,,0.0,,,,0.0,,,,,11.2,,,,,,,,Mechanics,A
+11.3,,,,0.0,,,,0.0,,,,,11.3,,,,,,,,Mechanics,A
+11.4,,,,0.0,,,,0.0,,,,,11.4,,,,,,,,Mechanics,A
+11.5,,,,0.0,,,,0.0,,,,,11.5,,,,,,,,Mechanics,A
+11.6,,,,0.0,,,,0.0,,,,,11.6,,,,,,,,Mechanics,A
+11.7,,,,0.0,,,,0.0,,,,,11.7,,,,,,,,Mechanics,A
+11.8,,,,0.0,,,,0.0,,,,,11.8,,,,,,,,Mechanics,A
+11.9,,,,0.0,,,,0.0,,,,,11.9,,,,,,,,Mechanics,A
+11.10,,,,0.0,,,,0.0,,,,,11.10,,,,,,,,Mechanics,A
+11.11,,,,0.0,,,,0.0,,,,,11.11,,,,,,,,Mechanics,A
+11.12,,,,0.0,,,,0.0,,,,,11.12,,,,,,,,Mechanics,A
+11.13,,,,0.0,,,,0.0,,,,,11.13,,,,,,,,Mechanics,A
+11.14,,,,0.0,,,,0.0,,,,,11.14,,,,,,,,Mechanics,A
+11.15,,,,0.0,,,,0.0,,,,,11.15,,,,,,,,Mechanics,A
+11.16,,,,0.0,,,,0.0,,,,,11.16,,,,,,,,Mechanics,A
+11.17,,,,0.0,,,,0.0,,,,,11.17,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+11.,"Total Price: 
+",,,,,,,0.0,,,,,11.,total price:,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+12.,,,,,,,,,,,,,12.,,,,,,,,Mechanics,A
+12.1,,,,0.0,,,,0.0,,,,,12.1,,,,,,,,Mechanics,A
+12.2,,,,0.0,,,,0.0,,,,,12.2,,,,,,,,Mechanics,A
+12.3,,,,0.0,,,,0.0,,,,,12.3,,,,,,,,Mechanics,A
+12.4,,,,0.0,,,,0.0,,,,,12.4,,,,,,,,Mechanics,A
+12.5,,,,0.0,,,,0.0,,,,,12.5,,,,,,,,Mechanics,A
+12.6,,,,0.0,,,,0.0,,,,,12.6,,,,,,,,Mechanics,A
+12.7,,,,0.0,,,,0.0,,,,,12.7,,,,,,,,Mechanics,A
+12.8,,,,0.0,,,,0.0,,,,,12.8,,,,,,,,Mechanics,A
+12.9,,,,0.0,,,,0.0,,,,,12.9,,,,,,,,Mechanics,A
+12.10,,,,0.0,,,,0.0,,,,,12.10,,,,,,,,Mechanics,A
+12.11,,,,0.0,,,,0.0,,,,,12.11,,,,,,,,Mechanics,A
+12.12,,,,0.0,,,,0.0,,,,,12.12,,,,,,,,Mechanics,A
+12.13,,,,0.0,,,,0.0,,,,,12.13,,,,,,,,Mechanics,A
+12.14,,,,0.0,,,,0.0,,,,,12.14,,,,,,,,Mechanics,A
+12.15,,,,0.0,,,,0.0,,,,,12.15,,,,,,,,Mechanics,A
+12.16,,,,0.0,,,,0.0,,,,,12.16,,,,,,,,Mechanics,A
+12.17,,,,0.0,,,,0.0,,,,,12.17,,,,,,,,Mechanics,A
+12.18,,,,0.0,,,,0.0,,,,,12.18,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+12.,"Total Price: 
+",,,,,,,0.0,,,,,12.,total price:,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+13.,,,,,,,,,,,,,13.,,,,,,,,Mechanics,A
+13.1,,,,0.0,,,,0.0,,,,,13.1,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+13.,"Total Price: 
+",,,,,,,0.0,,,,,13.,total price:,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+14.,,,,,,,,,,,,,14.,,,,,,,,Mechanics,A
+14.1,,,,0.0,,,,0.0,,,,,14.1,,,,,,,,Mechanics,A
+14.2,,,,0.0,,,,0.0,,,,,14.2,,,,,,,,Mechanics,A
+14.3,,,,0.0,,,,0.0,,,,,14.3,,,,,,,,Mechanics,A
+14.4,,,,0.0,,,,0.0,,,,,14.4,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+14.,"Total Price: 
+",,,,,,,0.0,,,,,14.,total price:,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+15.,,,,,,,,,,,,,15.,,,,,,,,Mechanics,A
+15.1,,,,0.0,,,,0.0,,,,,15.1,,,,,,,,Mechanics,A
+15.2,,,,0.0,,,,0.0,,,,,15.2,,,,,,,,Mechanics,A
+15.3,,,,0.0,,,,0.0,,,,,15.3,,,,,,,,Mechanics,A
+15.4,,,,0.0,,,,0.0,,,,,15.4,,,,,,,,Mechanics,A
+15.5,,,,0.0,,,,0.0,,,,,15.5,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+15.,"Total Price: 
+",,,,,,,0.0,,,,,15.,total price:,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+16.,,,,,,,,,,,,,16.,,,,,,,,Mechanics,A
+16.1,,,,0.0,,,,0.0,,,,,16.1,,,,,,,,Mechanics,A
+16.2,,,,0.0,,,,0.0,,,,,16.2,,,,,,,,Mechanics,A
+16.3,,,,0.0,,,,0.0,,,,,16.3,,,,,,,,Mechanics,A
+16.4,,,,0.0,,,,0.0,,,,,16.4,,,,,,,,Mechanics,A
+16.5,,,,0.0,,,,0.0,,,,,16.5,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+16.,"Total Price: 
+",,,,,,,0.0,,,,,16.,total price:,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+17.,,,,,,,,,,,,,17.,,,,,,,,Mechanics,A
+17.1,,,,0.0,,,,0.0,,,,,17.1,,,,,,,,Mechanics,A
+17.2,,,,0.0,,,,0.0,,,,,17.2,,,,,,,,Mechanics,A
+17.3,,,,0.0,,,,0.0,,,,,17.3,,,,,,,,Mechanics,A
+17.4,,,,0.0,,,,0.0,,,,,17.4,,,,,,,,Mechanics,A
+17.5,,,,0.0,,,,0.0,,,,,17.5,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,0.0,,,,0.0,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+17.,"Total Price: 
+",,,,,,,0.0,,,,,17.,total price:,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+1.,Paint Transfer,,,,,,,281595.47148282436,,,,,1.,paint transfer,,,,,,,Mechanics,A
+2.,0,,,,,,,0.0,,,,,2.,0,,,,,,,Mechanics,A
+3.,0,,,,,,,0.0,,,,,3.,0,,,,,,,Mechanics,A
+4.,0,,,,,,,0.0,,,,,4.,0,,,,,,,Mechanics,A
+5.,0,,,,,,,0.0,,,,,5.,0,,,,,,,Mechanics,A
+6.,0,,,,,,,0.0,,,,,6.,0,,,,,,,Mechanics,A
+7.,0,,,,,,,0.0,,,,,7.,0,,,,,,,Mechanics,A
+8.,0,,,,,,,0.0,,,,,8.,0,,,,,,,Mechanics,A
+9.,0,,,,,,,0.0,,,,,9.,0,,,,,,,Mechanics,A
+10.,0,,,,,,,0.0,,,,,10.,0,,,,,,,Mechanics,A
+11.,0,,,,,,,0.0,,,,,11.,0,,,,,,,Mechanics,A
+12.,0,,,,,,,0.0,,,,,12.,0,,,,,,,Mechanics,A
+13.,0,,,,,,,0.0,,,,,13.,0,,,,,,,Mechanics,A
+14.,0,,,,,,,0.0,,,,,14.,0,,,,,,,Mechanics,A
+15.,0,,,,,,,0.0,,,,,15.,0,,,,,,,Mechanics,A
+16.,0,,,,,,,0.0,,,,,16.,0,,,,,,,Mechanics,A
+17.,0,,,,,,,0.0,,,,,17.,0,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,Final Price:,,,,,,,281595.47148282436,,,,,,final price:,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
+,,,,,,,,,,,,,,,,,,,,,Mechanics,A
