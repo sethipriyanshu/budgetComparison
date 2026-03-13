@@ -74,12 +74,3 @@ vendor-comparison-engine/
 └── tests/
 ```
 
-## Tests
-
-```bash
-pytest tests/ -v
-```
-
-## License
-
-Internal use. See your organization’s policy for distribution.
