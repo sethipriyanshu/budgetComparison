@@ -4,7 +4,6 @@ import tempfile
 from pathlib import Path
 from typing import Dict, List, Tuple
 
-import pandas as pd
 import streamlit as st
 import yaml
 
@@ -258,8 +257,6 @@ def main() -> None:
                 result = run_comparison(a_path, b_path, sheet_pairs)
 
         validation = result["validation"]
-        matches_df: pd.DataFrame = result["matches_with_deltas"]
-        unmatched_df: pd.DataFrame = result["unmatched"]
 
         status_color = "green" if validation.ok else "orange"
         status_label = "PASS" if validation.ok else "Totals differ (report still generated)"
@@ -272,15 +269,6 @@ def main() -> None:
             st.write(f"- {msg}")
         if not validation.ok:
             st.caption("The workbook was still generated so you can compare line-by-line. Adjust totals in your analysis as needed.")
-
-        st.write(f"**Matched rows with deltas**: {len(matches_df)}")
-        st.write(f"**Unmatched rows**: {len(unmatched_df)}")
-
-        with st.expander("Preview matched rows (first 50)", expanded=False):
-            st.dataframe(matches_df.head(50))
-
-        with st.expander("Preview unmatched summary (first 50)", expanded=False):
-            st.dataframe(unmatched_df.head(50))
 
         st.download_button(
             label="Download comparison workbook (.xlsx)",
