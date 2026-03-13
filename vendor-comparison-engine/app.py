@@ -171,8 +171,48 @@ def run_comparison(
 
 def main() -> None:
     st.set_page_config(page_title="Vendor Comparison Engine", layout="wide")
-    st.title("Vendor Comparison Engine")
-    st.write("Upload two vendor Excel quote files to generate a comparison workbook.")
+
+    # Leadec-style header: dark blue bar, white text
+    st.markdown(
+        """
+        <style>
+        .leadec-header {
+            background: #002855;
+            color: white;
+            padding: 1.5rem 2rem;
+            margin-bottom: 1.5rem;
+            border-radius: 0;
+        }
+        .leadec-header h1 {
+            color: white !important;
+            margin: 0;
+            font-size: 1.75rem;
+            font-weight: 700;
+        }
+        .leadec-header p {
+            color: rgba(255,255,255,0.9);
+            margin: 0.35rem 0 0 0;
+            font-size: 0.95rem;
+        }
+        /* Primary buttons: solid dark blue */
+        .stButton > button {
+            background-color: #002855 !important;
+            color: white !important;
+        }
+        .stButton > button:hover {
+            background-color: #003366 !important;
+            color: white !important;
+        }
+        /* Section headings in Leadec blue */
+        h2, h3 { color: #002855 !important; }
+        </style>
+        <div class="leadec-header">
+            <h1>Vendor Comparison Engine</h1>
+            <p>Upload two vendor Excel quote files to generate a comparison workbook.</p>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
 
     col1, col2 = st.columns(2)
     with col1:

@@ -1,0 +1,8 @@
+# Leadec-style corporate theme: blue and white
+[theme]
+base = "light"
+primaryColor = "#002855"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F5F7FA"
+textColor = "#002855"
+font = "sans serif"
