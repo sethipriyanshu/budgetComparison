@@ -104,7 +104,7 @@ def main() -> None:
     )
     parser.add_argument(
         "--output",
-        help="Optional path to write the final comparison Excel workbook (.xlsx)",
+        help="Optional path to write the final comparison Excel workbook (.xlsm)",
     )
 
     args = parser.parse_args()
@@ -201,6 +201,9 @@ def main() -> None:
 
     if args.output:
         output_path = Path(args.output)
+        if output_path.suffix.lower() != ".xlsm":
+            output_path = output_path.with_suffix(".xlsm")
+            print(f"[OUTPUT] Switching to template-compatible Excel output: {output_path}")
         write_excel_workbook(
             output_path=output_path,
             matches_with_deltas=deltas.matches_with_deltas,

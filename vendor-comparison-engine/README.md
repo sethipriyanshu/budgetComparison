@@ -33,12 +33,12 @@ pip install -r requirements.txt
 2. Upload **Vendor A** and **Vendor B** Excel files (.xlsx).
 3. Review **Sheet matching**: confirm or change how each Vendor A sheet is paired with a Vendor B sheet (or set to "None").
 4. Click **Run comparison**.
-5. Download the generated **comparison workbook** (.xlsx).
+5. Download the generated **comparison workbook** (.xlsm).
 
 ### CLI
 
 ```bash
-python compare.py --vendor-a path/to/vendor_a.xlsx --vendor-b path/to/vendor_b.xlsx --output-dir ./output
+python compare.py --vendor-a path/to/vendor_a.xlsx --vendor-b path/to/vendor_b.xlsx --output ./comparison.xlsm
 ```
 
 - Outputs the comparison workbook under `--output-dir` and optionally CSV exports of matches/unmatched (if `--debug` is used).
@@ -53,8 +53,7 @@ python compare.py --vendor-a path/to/vendor_a.xlsx --vendor-b path/to/vendor_b.x
 
 ## Output workbook
 
-- **Summary**: Totals for Vendor A and B, difference, line counts; “By section” table using your sheet pairs.
-- **Per-section sheets** (e.g. "Mechanics Comparison", "Electrics Comparison"): Item ref, Item name, Qty/Unit/Total for A and B, price difference ($ and %), Comments. Vendor A columns are light blue, Vendor B light orange; difference % has conditional formatting (green / yellow / red).
+- **Comparisonv1 template layout**: `Customer`, `Vendor1`, `Vendor2`, and `Comparison` sheets with the same formatting/colors/conditional formatting as `Comparisonv1.xlsm`.
 
 ## Project structure
 

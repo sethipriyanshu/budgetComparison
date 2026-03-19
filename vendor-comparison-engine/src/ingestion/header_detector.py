@@ -51,7 +51,10 @@ def detect_header_row(df: pd.DataFrame) -> Optional[int]:
         hits = _count_anchor_hits(row.tolist())
         if hits >= MIN_ANCHORS_FOR_HEADER:
             return int(idx)
-    return None
+    # Fallback: treat the first row as header if we can't find anchors.
+    # (apply_header_detection also falls back, but some unit tests call this
+    # helper directly.)
+    return 0
 
 
 def _extract_metadata_rows(df: pd.DataFrame, header_row_index: int) -> pd.DataFrame:

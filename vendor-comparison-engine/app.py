@@ -145,7 +145,7 @@ def run_comparison(
 
     # Build Excel workbook in a temporary file and return bytes
     with tempfile.TemporaryDirectory() as tmpdir:
-        tmp_path = Path(tmpdir) / "comparison.xlsx"
+        tmp_path = Path(tmpdir) / "comparison.xlsm"
         write_excel_workbook(
             output_path=tmp_path,
             matches_with_deltas=deltas.matches_with_deltas,
@@ -313,8 +313,8 @@ def main() -> None:
         st.download_button(
             label="Download comparison workbook (.xlsx)",
             data=result["excel_bytes"],
-            file_name="vendor_comparison.xlsx",
-            mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+            file_name="vendor_comparison.xlsm",
+            mime="application/vnd.ms-excel.sheet.macroEnabled.12",
         )
 
 
